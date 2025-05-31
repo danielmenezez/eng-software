@@ -44,31 +44,60 @@ header {
   margin: auto;
 }
 
-/* Navegação principal dentro do cabeçalho */
+.navbar {
+  background-color: #eaf6f0;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #d4e6de;
+}
+
+/* Estrutura interna do header */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
-/* Logo da empresa no menu */
 .logo {
-  color: var(--verde);
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1d1d1d;
 }
 
-/* Menu de navegação em desktop */
+/* Menu de navegação */
 .menu {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 
 .menu a {
-  color: var(--texto);
   text-decoration: none;
+  color: #007d65;
   font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  font-weight: 700;
+}
+
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border: 2px solid #007d65;
+  border-radius: 999px;
+  color: #007d65;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: #007d65;
+  color: #fff;
 }
 
 /* Seção de destaque principal (Hero) */

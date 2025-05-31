@@ -1,0 +1,246 @@
+/* Estilo base */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho fixo com menu de navegação */
+header {
+  background: var(--branco);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+/* Container centralizado e com largura máxima */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #eaf6f0;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #d4e6de;
+}
+
+/* Estrutura interna do header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1d1d1d;
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #007d65;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  font-weight: 700;
+}
+
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border: 2px solid #007d65;
+  border-radius: 999px;
+  color: #007d65;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  background-color: #007d65;
+  color: #fff;
+}
+
+/* Header da página */
+.comparativo-header {
+  padding: 60px 0 20px;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.comparativo-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tabs span {
+  margin: 0 1rem;
+  font-weight: bold;
+  color: #007d65;
+  cursor: pointer;
+}
+
+.tabs .ativo {
+  text-decoration: underline;
+}
+
+/* Planos em destaque */
+.planos-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.plano {
+  flex: 1 1 280px;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+}
+
+.plano.destaque {
+  border: 2px solid #007d65;
+  background-color: #f0faf6;
+}
+
+.plano:hover {
+  transform: translateY(-4px);
+}
+
+.plano h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.plano .descricao {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.plano .preco {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007d65;
+  margin: 1rem 0;
+}
+
+.plano .preco span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.plano .extra {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.plano button {
+  background-color: #007d65;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.plano button:hover {
+  background-color: #04664e;
+}
+
+/* Tabela comparativa */
+.tabela-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+.tabela-comparativa thead {
+  background-color: #f0f0f0;
+}
+
+.tabela-comparativa th,
+.tabela-comparativa td {
+  border: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.tabela-comparativa td:first-child,
+.tabela-comparativa th:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.tabela-comparativa .secao {
+  background-color: #f7f9fb;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Link inferior */
+.info-final {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.info-final a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007d65;
+  font-size: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .tabela-comparativa {
+    font-size: 0.85rem;
+  }
+
+  .planos-topo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plano {
+    max-width: 100%;
+  }
+}
