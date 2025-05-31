@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loreto Contabilidade</title>
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
   <!-- Cabeçalho fixo com logo e navegação -->
   <header>
     <div class="container">
@@ -24,70 +26,135 @@
   </header>
 
   <!-- Seção de destaque (hero) -->
-  <section id="inicio" class="hero">
-    <div class="container">
+ <section id="inicio" class="hero">
+  <div class="container hero-layout">
+    <div class="hero-content">
+      <p class="hero-subtitle">BOAS-VINDAS A LORETO CONTABILIDADE 👋</p>
       <h1>Contabilidade eficiente para todos</h1>
       <p>Os contadores da Loreto oferecem soluções contábeis personalizadas para ajudar você a crescer com segurança. Tecnologia, transparência e atendimento humanizado ao seu lado.</p>
-      <a href="#contato" class="btn">FAÇA SEU ORÇAMENTO</a>
+      <br>
+      <a href="#contato" class="btn-whatsapp"> <img src="imagens/icon-wpp.png" alt="WhatsApp" class="icon">FAÇA SEU ORÇAMENTO</a>
+      
     </div>
-  </section>
+    <div class="mulher1">
+      <img src="imagens/mulher1.png" alt="Mulher sorrindo com blusa verde" />
+    </div>
+  </div>
+
+   <!-- Estatísticas abaixo da imagem -->
+  <div class="estatisticas-box">
+    <div class="estatistica">
+      <h3>+300</h3>
+      <p>Clientes Atendidos</p>
+    </div>
+    <div class="estatistica">
+      <h3>+10</h3>
+      <p>Contadores disponíveis</p>
+    </div>
+    <div class="estatistica">
+      <h3>+40</h3>
+      <p>Anos no mercado</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seção de serviços com quatro áreas de atuação -->
+  <section id="servicos">
+  <div class="container">
+    <h2 class="titulo-servicos">SERVIÇOS</h2>
+    <h3 class="subtitulo-servicos">Como podemos ajudar com as suas finanças?</h3>
+
+    <div class="grid-servicos">
+      <div class="servico-card">
+        <img src="imagens/check.png" alt="Ícone check" class="icon-check">
+        <h4><u>Declaração de Imposto de Renda</u></h4>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+      </div>
+
+      <div class="servico-card">
+        <img src="imagens/check.png" alt="Ícone check" class="icon-check">
+        <h4><u>OnBoarding contábil</u></h4>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+      </div>
+
+      <div class="servico-card">
+        <img src="imagens/check.png" alt="Ícone check" class="icon-check">
+        <h4><u>Atendimento contábil ao cliente</u></h4>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+      </div>
+
+    <div class="servico-card invisible"></div>
+
+      <div class="servico-card">
+        <img src="imagens/check.png" alt="Ícone check" class="icon-check">
+        <h4><u>Inconsistência contábeis</u></h4>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Seção Sobre Nós com quatro diferenciais -->
-  <section id="sobre">
-    <div class="container">
-      <h2>Por que escolher nosso escritório de contabilidade?</h2>
-      <div class="cards">
-        <div class="card"><h3>Expertise de Mercado</h3><p>Lorem ipsum dolor sit amet...</p></div>
-        <div class="card"><h3>Soluções Personalizadas</h3><p>Pellentesque habitant morbi...</p></div>
-        <div class="card"><h3>Equipe Qualificada</h3><p>Nulla facilisi. Ut efficitur...</p></div>
-        <div class="card"><h3>Resultados Comprovados</h3><p>Cras tristique urna...</p></div>
-      </div>
+ <section id="sobre" class="sobre-nos">
+  <div class="container sobre-layout">
+    <div class="sobre-img">
+      <img src="imagens/contador-sobre.png" alt="Contador sorrindo com notebook" />
     </div>
-  </section>
 
-  <!-- Seção de serviços com quatro áreas de atuação -->
-  <section id="servicos">
-    <div class="container">
-      <h2>SERVIÇOS</h2>
-      <div class="servicos">
-        <div class="card"><h3>Onboarding Contábil</h3><p>Texto sobre onboarding...</p></div>
-        <div class="card"><h3>Declaração de Imposto de Renda</h3><p>Texto sobre IRPF...</p></div>
-        <div class="card"><h3>Atendimento Contábil ao Cliente</h3><p>Texto sobre atendimento...</p></div>
-        <div class="card"><h3>Inconsistências Contábeis</h3><p>Texto sobre inconsistências...</p></div>
-      </div>
-    </div>
-  </section>
+    <div class="sobre-texto">
+      <h2 class="tag">SOBRE NÓS</h2>
+      <h2>Por Que Escolher Nosso<br>escritório de Contabilidade?</h2>
 
-  <!-- Seção de estatísticas e botão de orçamento -->
-  <section class="estatisticas">
-    <div class="container">
-      <h2>Resultados em Números</h2>
-      <div class="cards">
-        <div class="card estat-item">+3.500 Clientes Atendidos</div>
-        <div class="card estat-item">+15 Contadores Disponíveis</div>
-        <div class="card estat-item">+10 Anos no Mercado</div>
-      </div>
-      <br>
-      <a href="#contato" class="btn">FAÇA SEU ORÇAMENTO</a>
+      <p><strong>Expertise de Mercado:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ante felis.</p>
+      <p><strong>Soluções Personalizadas:</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <p><strong>Equipe Qualificada:</strong> Nulla facilisi. Ut efficitur ligula ac bibendum venenatis.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Reforço institucional com boas-vindas -->
-  <section class="hero">
-    <div class="container">
-      <h2>BOAS-VINDAS À LORETO CONTABILIDADE</h2>
-      <p>Os contadores da Loreto oferecem soluções contábeis personalizadas para ajudar você a crescer com segurança. Tecnologia, transparência e atendimento humanizado ao seu lado.</p>
-    </div>
-  </section>
+  <!-- Seção de Contato -->
+<section id="contato" class="contato">
+  <div class="container contato-layout">
+    <div class="contato-info">
+      <h2>Entre em contato<br>com a gente!</h2>
 
-  <!-- Rodapé com informações de contato -->
-  <footer id="contato">
-    <div class="container">
-      <h2>Entre em contato</h2>
-      <p>Email: contato@loreto.com</p>
-      <p>Endereço: Rua Gen. Osório 1212, 2º andar, cj. 201 (Centro), Campinas, SP</p>
-      <p>© 2025 Loreto Contabilidade. Todos os direitos reservados.</p>
+      <p class="contato-linha">
+        <img src="imagens/icon-mapa.png" alt="Ícone endereço" class="icon">
+        Rua Gen. Osório 1212, 2° andar, cj. 201 (Centro), Campinas, SP
+      </p>
+
+      <p class="contato-linha">
+        <img src="imagens/icon-email.png" alt="Ícone e-mail" class="icon">
+        contato@loreto.com
+      </p>
+
+      <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+        <img src="imagens/icon-wpp.png" alt="WhatsApp" class="icon">
+        FAÇA SEU ORÇAMENTO
+      </a>
     </div>
-  </footer>
+
+    <div class="contato-img">
+      <img src="imagens/contato-img.png" alt="Pessoa sorrindo com celular" />
+    </div>
+  </div>
+</section>
+
+  <!-- Rodapé -->
+<footer class="rodape">
+  <div class="container rodape-layout">
+    <div class="rodape-info">
+      <strong>Loreto<br>Contabilidade</strong>
+      <p>©2025 – CConsult.</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+
+    <div class="rodape-social">
+      <a href= https://www.instagram.com/loretocontabilidade/ target="_blank"><img src="imagens/icon-instagram.png" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="imagens/icon-facebook.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="imagens/icon-yt.png" alt="YouTube"></a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
