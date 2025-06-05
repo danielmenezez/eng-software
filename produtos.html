@@ -8,19 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-      <!-- Cabeçalho fixo com logo e navegação -->
   <header class="navbar">
     <div class="container">
       <nav>
         <div class="logo">Loreto Contabilidade</div>
-         <!-- Botão hambúrguer para mobile -->
       <button class="hamburger" aria-label="Abrir menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-       <!-- Menu de navegação -->
         <div class="menu">
           <a href="index.html#inicio">Início</a>
           <a href="index.html#sobre">Sobre</a>
@@ -93,9 +90,29 @@
       <a href="#">Informações adicionais →</a>
     </div>
   </main>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <h2>Inscreva-se no Plano</h2>
+      <form id="form-inscricao">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+  
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+  
+        <label for="plano">Plano:</label>
+        <select id="plano" name="plano">
+          <option value="Standard">Standard</option>
+          <option value="Premium">Premium</option>
+        </select>
+  
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
 </body>
 
- <!-- Script botão hamburguer menu responsivo -->
 <script>
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector('.menu');
