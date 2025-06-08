@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loreto Contabilidade</title>
+  <link rel="stylesheet" href="cadastro_style.css">
+</head>
+
+<body>
+
+<form action="cadastro.php" method="POST">
+  <input type="text" name="nom_cliente" placeholder="Nome completo" required>
+  <input type="email" name="email" placeholder="E-mail" required>
+
+<div class="campo-senha">
+  <input type="password" name="senha" id="senha" placeholder="Crie uma senha" required>
+<span class="icon" onclick="toggleSenha('senha', this)">
+    <img src="icone_senha_olho.png" alt="Ver senha" />
+  </span>
+</div>
+ <div class="campo-senha">
+  <input type="password" name="confirma_senha" id="confirma_senha" placeholder="Confirme a senha" required>
+  <span class="icon" onclick="toggleSenha('confirma_senha', this)">
+    <img src="icone_senha_olho.png" alt="Ver senha" />
+  </span>
+</div>
+
+  <input type="text" name="telefone" placeholder="Telefone" maxlength="15"required>
+  <input type="text" name="cpf_cnpj" placeholder="CPF ou CNPJ" maxlength="14" required>
+  <input type="text" name="cidade" placeholder="Cidade" required>
+  <input type="text" name="uf" placeholder="UF" maxlength="2" required>
+  <input type="text" name="cep" placeholder="CEP" maxlength="9" required>
+  <input type="text" name="logradouro" placeholder="Rua/Avenida" required>
+  <input type="number" name="numero" placeholder="Número" required>
+  <input type="text" name="bairro" placeholder="Bairro" required>
+  <button type="submit">Cadastrar</button>
+</form>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p id="popup-message"></p>
+    <button onclick="fecharPopup()">OK</button>
+  </div>
+</div>
+
+</body>
+</html>
+<!-- Botão Ver senha -->
+<script>
+function toggleSenha(id) {
+  const input = document.getElementById(id);
+  if (input.type === "password") {
+    input.type = "text";
+  } else {
+    input.type = "password";
+  }
+}
+</script>
+
+
+<script>
+function mostrarPopup(mensagem) {
+  document.getElementById("popup-message").innerText = mensagem;
+  document.getElementById("popup").style.display = "flex";
+  redirecionarParaIndex = redirecionar;
+}
+
+function fecharPopup() {
+  document.getElementById("popup").style.display = "none";
+   if (redirecionarParaIndex) {
+    window.location.href = "index.html";
+  }
+}
+</script>
+
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("status") === "ok") {
+  mostrarPopup("Cadastro realizado com sucesso!");
+} else if (params.get("status") === "erro") {
+  mostrarPopup("As senhas não coincidem.");
+}
+</script>
